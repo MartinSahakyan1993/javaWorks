@@ -1,4 +1,4 @@
-package bookHomeWork;
+package book;
 
 public interface Commands {
     int EXIT = 0;
