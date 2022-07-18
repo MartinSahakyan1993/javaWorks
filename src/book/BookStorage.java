@@ -1,19 +1,17 @@
 package book;
 
-import bookHomeWork.Book;
-
 public class BookStorage {
-    private bookHomeWork.Book array[]= new bookHomeWork.Book[10];
+    private Book array[]= new Book[10];
     private int size = 0;
 
-    public void  add (bookHomeWork.Book book){
+    public void  add (Book book){
         if (size == array.length){
             increaseArray();
         }
         array [size++]= book;
     }
     private void increaseArray(){
-        bookHomeWork.Book[] temp = new Book[array.length + 10];
+        Book[] temp = new Book[array.length + 10];
         for (int i = 0; i < size; i++) {
             temp[i]= array[i];
 

@@ -1,8 +1,5 @@
 package book;
 
-import bookHomeWork.Book;
-import bookHomeWork.BookStorage;
-import bookHomeWork.Commands;
 
 import java.util.Scanner;
 
@@ -85,7 +82,7 @@ public class BookDemo implements Commands {
         String gener = scanner.nextLine();
         double price = Integer.parseInt(priceStr);
         int count = Integer.parseInt(countStr);
-        bookHomeWork.Book book = new Book(title, AuthorName, price, count, gener);
+        Book book = new Book(title, AuthorName, price, count, gener);
         bookStorage.add(book);
     }
 }
